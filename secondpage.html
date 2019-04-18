@@ -47,10 +47,10 @@ body, html {
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" >News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<button class="tablink" onclick="openPage1('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage2('News', this, 'green')" >News</button>
+<button class="tablink" onclick="openPage3('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage4('About', this, 'orange')">About</button>
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
@@ -72,9 +72,51 @@ body, html {
 </div>
 
 <script>
-function openPage(pageName,elmnt,color) {
+function openPage1(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
   window.open("https://www.w3schools.com");
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+function openPage2(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  window.open("https://www.google.com");
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+function openPage3(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  window.open("https://www.youtube.com");
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+function openPage4(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  window.open("https://www.yahoo.com");
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
