@@ -48,7 +48,7 @@ body, html {
 <button class="tablink" onclick="openPage3('Contact', this, 'blue')" id="defaultOpen3">Contact</button>
 <button class="tablink" onclick="openPage4('About', this, 'orange')" id="defaultOpen4">About</button>
 
-<div id="Home" class="tabcontent">
+<!-- <div id="Home" class="tabcontent">
   <h3>Home</h3>
 </div>
 
@@ -65,7 +65,7 @@ body, html {
 <div id="About" class="tabcontent">
   <h3>About</h3>
   <p>Who we are and what we do.</p>
-</div>
+</div> -->
 
 <script>
 function openPage1(pageName,elmnt,color) {
@@ -112,7 +112,7 @@ function openPage3(pageName,elmnt,color) {
 }
 function openPage4(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
-  window.open("https://www.yahoo.com","_self");
+  window.open("about.html","_self");
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
