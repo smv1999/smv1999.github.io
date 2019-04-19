@@ -74,7 +74,8 @@ body, html {
 <script>
 function openPage1(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
-  window.open("index.html","_self");
+  //window.open("index.html","_self");
+  window.location.reload();
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
