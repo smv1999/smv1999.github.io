@@ -6,8 +6,8 @@ Also visit this blog:
 https://vaidhyanathansm.wixsite.com/codingmaster
 
 # Built with
-HTML
-CSS
+HTML,
+CSS,
 Javascript
 
 
