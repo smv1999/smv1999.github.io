@@ -38,7 +38,7 @@ body{
 	font-family: Geneva,Arial,sans-serif;
 	background-color: #ffffff;
 	color: #000000;
- 
+
 	margin-right: 5%;
 	margin-left: 5%;
 	font-size: small;
@@ -112,14 +112,14 @@ div#ContainerDiv{
 	text-align: right;
 	font-size: 150%;
 	direction: rtl;
-	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif;
 }
 
 .CentredRTLText{
 	text-align: center;
 	font-size: 150%;
 	direction: rtl;
-	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif;
 }
 
 button p.RTLText{
@@ -519,7 +519,7 @@ div.ShortAnswer{
 	background-color: #dddddd;
 
 	border-width: 1pt;
-	cursor: pointer;	
+	cursor: pointer;
 	box-shadow: 0.2em 0.3em 0.2em #6e6e6e;
 }
 
@@ -548,16 +548,16 @@ div.NavButtonBar{
 	border-radius: 0.5em;
 	padding: 0.5em;
 	min-width: 3em;
-	
+
 	border-left-color: #cccccc;
 	border-top-color: #cccccc;
 	border-right-color: #4c4c4c;
-	border-bottom-color: #4c4c4c; 
+	border-bottom-color: #4c4c4c;
 	background-color: #999999;
 	color: #000000;
 
 	border-width: 1pt;
-	cursor: pointer;	
+	cursor: pointer;
 	box-shadow: 0.2em 0.3em 0.2em #4c4c4c;
 }
 
@@ -665,7 +665,7 @@ function ShowMessage(Feedback){
 
 //Focus the OK button
 	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
-	
+
 //
 }
 
@@ -693,7 +693,7 @@ function ShowElements(Show, TagName, ContainerToReverse){
 			else{
 				Els[i].style.visibility = 'hidden';
 			}
-		} 
+		}
 	}
 }
 
@@ -769,13 +769,13 @@ function GetViewportHeight(){
 
 function TopSettingWithScrollOffset(TopPercent){
 	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
-	return GetScrollTop() + T; 
+	return GetScrollTop() + T;
 }
 
 //CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
 var InTextBox = false;
 
-function SuppressBackspace(e){ 
+function SuppressBackspace(e){
 	if (InTextBox == true){return;}
 	thisKey = e.keyCode;
 
@@ -872,7 +872,7 @@ function FindLongest(InArray){
 
 //SELECTION OBJECT FOR TYPING WITH KEYPAD
 var selObj = null;
-            
+
 SelObj = function(box){
 	this.box = box;
 	this.selStart = this.box.selectionStart;
@@ -985,7 +985,7 @@ function CompleteEmptyFeedback(){
 }
 
 function SetUpQuestions(){
-	var AList = new Array(); 
+	var AList = new Array();
 	var QList = new Array();
 	var i, j;
 	Qs = document.getElementById('Questions');
@@ -1022,7 +1022,7 @@ function SetUpQuestions(){
 			}
 		}
 	}
-	
+
 	for (i=0; i<QList.length; i++){
 		Qs.appendChild(QList[i]);
 		QArray[QArray.length] = QList[i];
@@ -1030,13 +1030,13 @@ function SetUpQuestions(){
 
 //Show the first item
 	QArray[0].style.display = '';
-	
+
 //Now hide all except the first item
 	for (i=1; i<QArray.length; i++){
 		QArray[i].style.display = 'none';
-	}		
+	}
 	SetQNumReadout();
-	
+
 	SetFocusToTextbox();
 }
 
@@ -1051,7 +1051,7 @@ function SetFocusToTextbox(){
 	}
 	else{
   	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
-  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();
 //and show a keypad if there is one
 			if (document.getElementById('CharacterKeypad') != null){
 				document.getElementById('CharacterKeypad').style.display = 'block';
@@ -1068,7 +1068,7 @@ function SetFocusToTextbox(){
 
 function ChangeQ(ChangeBy){
 //The following line prevents moving to another question until the current
-//question is answered correctly. Uncomment it to enable this behaviour. 
+//question is answered correctly. Uncomment it to enable this behaviour.
 //	if (State[CurrQNum][0] == -1){return;}
 	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
 	QArray[CurrQNum].style.display = 'none';
@@ -1100,7 +1100,7 @@ function ShowSpecialReadingForQuestion(){
 						document.getElementById('ShowMethodButton').style.display = 'none';
 					}
 				}
-			}	
+			}
 		}
 	}
 }
@@ -1218,24 +1218,24 @@ function StartUp(){
 	if (QsToShow < 2){
 		document.getElementById('QNav').style.display = 'none';
 	}
-	
+
 //Stash the instructions so they can be redisplayed
 	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
-	
 
-	
 
-	
 
-	
+
+
+
+
 	CompleteEmptyFeedback();
 
 	SetUpQuestions();
 	ClearTextBoxes();
 	CreateStatusArray();
-	
 
-	
+
+
 //Check search string for q parameter
 	if (document.location.search.length > 0){
 		if (ShuffleQs == false){
@@ -1269,7 +1269,7 @@ function ShowHideQuestions(){
 		document.getElementById('Questions').style.listStyleType = 'none';
 		document.getElementById('OneByOneReadout').style.display = '';
 		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
-		ShowingAllQuestions = false;	
+		ShowingAllQuestions = false;
 	}
 	document.getElementById('ShowMethodButton').style.display = 'inline';
 }
@@ -1302,10 +1302,10 @@ function CreateStatusArray(){
 function CheckMCAnswer(QNum, ANum, Btn){
 //if question doesn't exist, bail
 	if (State[QNum].length < 1){return;}
-	
+
 //Get the feedback
 	Feedback = I[QNum][3][ANum][1];
-	
+
 //Now show feedback and bail if question already complete
 	if (State[QNum][0] > -1){
 //Add an extra message explaining that the question
@@ -1314,46 +1314,46 @@ function CheckMCAnswer(QNum, ANum, Btn){
 //Show the feedback
 		ShowMessage(Feedback);
 //New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
-//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}
 		return;
 	}
-	
+
 //Hide the button while processing
 	Btn.style.display = 'none';
 
 //Increment the number of tries
 	State[QNum][2]++;
-	
+
 //Add the percent-correct value of this answer
 	State[QNum][3] += I[QNum][3][ANum][3];
-	
+
 //Store the try number in the answer part of the State array, for tracking purposes
 	State[QNum][1][ANum] = State[QNum][2];
 	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
 	State[QNum][5] += String.fromCharCode(65+ANum);
-	
+
 //Should this answer be accepted as correct?
 	if (I[QNum][3][ANum][2] < 1){
 //It's wrong
 
 //Mark the answer
 		Btn.innerHTML = IncorrectIndicator;
-		
+
 //Remove any previous score unless exercise is finished (6.0.3.8+)
 		if (Finished == false){
 			WriteToInstructions(strInstructions);
-		}	
-		
+		}
+
 //Check whether this leaves just one MC answer unselected, in which case the Q is terminated
 		var RemainingAnswer = FinalAnswer(QNum);
 		if (RemainingAnswer > -1){
 //Behave as if the last answer had been selected, but give no credit for it
 //Increment the number of tries
-			State[QNum][2]++;		
-		
+			State[QNum][2]++;
+
 //Calculate the score for this question
 			CalculateMCQuestionScore(QNum);
-			
+
 //Get the overall score and add it to the feedback
 			CalculateOverallScore();
 //New for 6.2.2.1
@@ -1371,10 +1371,10 @@ function CheckMCAnswer(QNum, ANum, Btn){
 //It's right
 //Mark the answer
 		Btn.innerHTML = CorrectIndicator;
-				
+
 //Calculate the score for this question
 		CalculateMCQuestionScore(QNum);
-		
+
 //New for 6.2.2.0
 		var QsDone = CheckQuestionsCompleted();
 
@@ -1390,13 +1390,13 @@ function CheckMCAnswer(QNum, ANum, Btn){
 			WriteToInstructions(QsDone);
 		}
 	}
-	
+
 //Show the button again
 	Btn.style.display = 'inline';
-	
-//Finally, show the feedback	
+
+//Finally, show the feedback
 	ShowMessage(Feedback);
-	
+
 //Check whether all questions are now done
 	CheckFinished();
 }
@@ -1406,7 +1406,7 @@ function CalculateMCQuestionScore(QNum){
 	var PercentCorrect = State[QNum][3];
 	var TotAns = GetTotalMCAnswers(QNum);
 	var HintPenalties = State[QNum][4];
-	
+
 //Make sure it's not already complete
 
 	if (State[QNum][0] < 0){
@@ -1466,7 +1466,7 @@ function FinalAnswer(QNum){
 function CalculateOverallScore(){
 	var TotalWeighting = 0;
 	var TotalScore = 0;
-	
+
 	for (var QNum=0; QNum<State.length; QNum++){
 		if (State[QNum] != null){
 			if (State[QNum][0] > -1){
@@ -1479,9 +1479,9 @@ function CalculateOverallScore(){
 		Score = Math.floor((TotalScore/TotalWeighting)*100);
 	}
 	else{
-//if TotalWeighting is 0, no questions so far have any value, so 
+//if TotalWeighting is 0, no questions so far have any value, so
 //no penalty should be shown.
-		Score = 100; 
+		Score = 100;
 	}
 }
 
@@ -1516,7 +1516,7 @@ function CheckFinished(){
 		}
 	}
 	if (AllDone == true){
-	
+
 //Report final score and submit if necessary
 		CalculateOverallScore();
 		FB = YourScoreIs + ' ' + Score + '%.';
@@ -1531,12 +1531,12 @@ function CheckFinished(){
 			}
 			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
 		}
-		
+
 //New for 6.2.2.0
 		FB += '<br />' + ExerciseCompleted;
-		
+
 		WriteToInstructions(FB);
-		
+
 		Finished == true;
 
 
@@ -1544,7 +1544,7 @@ function CheckFinished(){
 
 		TimeOver = true;
 		Locked = true;
-		
+
 
 
 		Finished = true;
@@ -1639,7 +1639,7 @@ function CheckFinished(){
 </div>
 
 </div>
- 
+
 <ol class="QuizQuestions" id="Questions">
 <li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText"> Is Python case sensitive when dealing with identifiers?</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Yes</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;machine dependent</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;none of the mentioned</li></ol></li>
 <li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText"> Which of the following is an invalid variable?</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;my_string_1</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;1st_string</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;foo</li><li id="Q_1_3"><button class="FuncButton" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;_</li></ol></li>
@@ -1691,5 +1691,7 @@ function CheckFinished(){
 <!-- EndSubmissionForm -->
 
 </body>
+
+  <div class="footer"><font size="2">©2019 by S M Vaidhyanathan All Rights Reserved</font></div>
 
 </html>
