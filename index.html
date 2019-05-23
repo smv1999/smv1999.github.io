@@ -88,6 +88,7 @@ body, html {
 #Learn {background-color: white;}
 #Contact {background-color: white;}
 #About {background-color: white;}
+#Exercises {background-color: white;}
 </style>
 </head>
 <body>
@@ -96,6 +97,7 @@ body, html {
 <button class="tablink" onclick="openPage2('News', this, 'green')" id="defaultOpen2">Learn</button>
 <button class="tablink" onclick="openPage3('Contact', this, 'blue')" id="defaultOpen3">Contact</button>
 <button class="tablink" onclick="openPage4('About', this, 'orange')" id="defaultOpen4">About</button>
+<button class="tablink" onclick="openPage5('Exercises', this, 'orange')" id="defaultOpen5">Exercises</button>
 
 
 
@@ -146,6 +148,20 @@ function openPage3(pageName,elmnt,color) {
 function openPage4(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
   window.open("about.html","_self");
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+function openPage5(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  window.open("exercises.html","_self");
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
