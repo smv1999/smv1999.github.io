@@ -8,6 +8,12 @@
   <style>
 * {box-sizing: border-box}
 
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
 .footer{
        /* position: fixed; */
        text-align: center;
@@ -63,24 +69,7 @@ body, html {
 <button class="tablink" onclick="openPage3('Contact', this, 'blue')">Contact</button>
 <button class="tablink" onclick="openPage4('About', this, 'orange')">About</button>
 <button class="tablink" onclick="openPage5('Exercises', this, 'orange')">Exercises</button>
-<!-- <div id="Home" class="tabcontent">
-  <h3>Home</h3>
-</div>
 
-<div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p>
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
-</div> -->
 
 <script>
 function openPage1(pageName,elmnt,color) {
@@ -159,9 +148,14 @@ function openPage5(pageName,elmnt,color) {
 //document.getElementById("defaultOpen").click();
 </script>
 <b><font size="5">Contact Us</font></b>
-<center><img class="center-fit" src="clarityimage.jpg" alt="Contact Us" height="400"><br></center>
-<b>  Contact Us for Enquiries</b><br>
-<img src="smv.jpg" width="165" height="200" alt="S M Vaidhyanathan">
+<center><img class="center-fit" src="clarityimage.jpg" alt="Contact Us" height="400" style="width:100%;"><br></center>
+
+<div class="container">
+  <center><img class="center-fit" src="clarityimage.jpg" alt="Contact Us" height="400" style="width:100%;"><br></center>
+  <div class="topleft"><img src="smv.jpg" width="165" height="200" alt="S M Vaidhyanathan">
+</div>
+</div>
+
 <p><i class="fas fa-envelope"></i> Email: vaidhyanathan.sm@gmail.com</p>
 <p><i class="fas fa-phone"></i> Phone: 9600064291</p>
 <p></p>
