@@ -13,6 +13,18 @@
        bottom: 0px;
        width: 100%;
    }
+   .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
    .button {
      background-color: #3A9FEF; /* Green */
      border: none;
@@ -132,7 +144,29 @@
 <br>
 <p></p>
 <center><b><font size="5" color="black">My Projects</font></b></center><br>
+<br>
 
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
+  </div>
+</div>
 
 <hr>
   <div class="footer"><font size="2">©2019 by S M Vaidhyanathan All Rights Reserved</font></div>
