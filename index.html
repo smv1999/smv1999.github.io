@@ -146,10 +146,9 @@ body, html {
 }
 
 #Home {background-color: #000000;}
-#Learn {background-color: #000000;}
-#Contact {background-color: #000000;}
+#Projects {background-color: #000000;}
 #About {background-color: #000000;}
-#Exercises {background-color: #000000;}
+#Contact {background-color: #000000;}
 </style>
 </head>
 <body>
@@ -162,8 +161,6 @@ body, html {
 <button class="tablink" onclick="openPage3('Contact', this, 'black')" id="defaultOpen3">Contact</button>
 <!-- blue -->
 <button class="tablink" onclick="openPage4('About', this, 'black')" id="defaultOpen4">About</button>
-<!-- orange -->
-<button class="tablink" onclick="openPage5('Exercises', this, 'black')" id="defaultOpen5">Exercises</button>
 <!-- orange -->
 </div>
 
@@ -215,20 +212,6 @@ function openPage3(pageName,elmnt,color) {
 function openPage4(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
   window.open("about.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage5(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("exercises.html","_self");
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -327,9 +310,7 @@ It is necessary for the Engineers of the Electronics, Electrical, Mechatronics a
 </ul>
 
 
-<!-- <a href="https://www.linkedin.com/in/s-m-vaidhyanathan-241457171/" style="color:blue">Follow me on Linkedin</a><br>
-<a href="https://github.com/smv1999" style="color:blue">Follow me on GitHub</a><br>
-<a href="https://twitter.com/VaidhyanathanS3" style="color:blue">Follow me on Twitter</a><br> -->
+
 <hr>
 <center><p>Follow me on:</p></center><br>
 <center><a href="https://twitter.com/VaidhyanathanS3" class="fa fa-twitter"></a>
