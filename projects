@@ -56,19 +56,17 @@
    }
 
    #Home {background-color: #000000;}
-   #Learn {background-color: #000000;}
-   #Contact {background-color: #000000;}
+   #Projects {background-color: #000000;}
    #About {background-color: #000000;}
-   #Exercises {background-color: #000000;}
+   #Contact {background-color: #000000;}
    </style>
  </head>
  <body>
 
  <button class="tablink" onclick="openPage1('Home', this, 'red')" id="defaultOpen">Home</button>
- <button class="tablink" onclick="openPage2('News', this, 'green')" >Learn</button>
+ <button class="tablink" onclick="openPage2('News', this, 'green')" >Projects</button>
  <button class="tablink" onclick="openPage3('Contact', this, 'blue')">Contact</button>
  <button class="tablink" onclick="openPage4('About', this, 'orange')">About</button>
- <button class="tablink" onclick="openPage5('Exercises', this, 'orange')">Exercises</button>
 
 
  <script>
@@ -128,32 +126,10 @@
    document.getElementById(pageName).style.display = "block";
    elmnt.style.backgroundColor = color;
  }
- function openPage5(pageName,elmnt,color) {
-   var i, tabcontent, tablinks;
-   window.open("exercises.html","_self");
-   tabcontent = document.getElementsByClassName("tabcontent");
-   for (i = 0; i < tabcontent.length; i++) {
-     tabcontent[i].style.display = "none";
-   }
-   tablinks = document.getElementsByClassName("tablink");
-   for (i = 0; i < tablinks.length; i++) {
-     tablinks[i].style.backgroundColor = "";
-   }
-   document.getElementById(pageName).style.display = "block";
-   elmnt.style.backgroundColor = color;
- }
- // Get the element with id="defaultOpen" and click on it
- //document.getElementById("defaultOpen").click();
+
+
  </script>
- <br>
- <center><b size="6">Courses</b></center>
- <br>
- <br>
- <center><img src="pythonimage.png" height="80" width="80"><br></center>
- <center><b><a href="python.html"><p size="5">Learn Python</p></a></b></center>
- <center><img src="androidimage.jpeg" height="90" width="90"><br></center>
- <center><b><a href="android.html"><p size="5">Learn Android Development</p></a></b><br></center>
- <br>
+
 
 <hr>
   <div class="footer"><font size="2">©2019 by S M Vaidhyanathan All Rights Reserved</font></div>
