@@ -12,6 +12,25 @@
   padding-left:2em;
   padding-right:2em;
 }
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
 .column {
   float: left;
   width: 50%;
@@ -276,7 +295,11 @@ It is necessary for the Engineers of the Electronics, Electrical, Mechatronics a
 <div class="indent">Finally I would like to conclude that no one can stop the process of evolution of technology and advancements that are taking place at a faster pace every day. We can say that fruitful products of Science are unpredictable and unimaginable and there is nothing impossible!</div>
 <br>
 <p></p><br>
-<center><button class="button" onclick="myArticles()">For more Articles</button></center>
+<center><button class="button" onclick="myArticles()">For more Articles</button></center><br>
+<div id="cf">
+  <img src="chatterbotapp.PNG" />
+  <img src="mathyourwayapp.PNG" />
+</div>
 <hr>
 <p></p>
 <ul class="nav">
@@ -293,10 +316,7 @@ It is necessary for the Engineers of the Electronics, Electrical, Mechatronics a
 <br>
 <li><a class="indentleftonly" href="mathyourway_privacy_policy.html" target = "_self" style="color:blue">Look into our privacy policy.</a></li><br><br>
 <br>
-<div id="cf">
-  <img class="bottom" src="chatterbotapp.PNG" />
-  <img class="top" src="mathyourwayapp.PNG" />
-</div>
+
 <hr>
 <br>
 <footer class="footer"><font size="2">©2019 S M Vaidhyanathan All Rights Reserved</font></footer>
