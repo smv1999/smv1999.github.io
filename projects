@@ -86,7 +86,7 @@
  }
  function openPage2(pageName,elmnt,color) {
    var i, tabcontent, tablinks;
-   window.open("news.html","_self");
+   window.open("projects.html","_self");
    tabcontent = document.getElementsByClassName("tabcontent");
    for (i = 0; i < tabcontent.length; i++) {
      tabcontent[i].style.display = "none";
