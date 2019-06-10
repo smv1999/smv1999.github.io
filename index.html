@@ -12,14 +12,15 @@
   padding-left:2em;
   padding-right:2em;
 }
-#cf {
+
+
+#cf2 {
   position:relative;
   height:281px;
   width:450px;
   margin:0 auto;
 }
-
-#cf img {
+#cf2 img {
   position:absolute;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
@@ -28,8 +29,11 @@
   transition: opacity 1s ease-in-out;
 }
 
-#cf img.top:hover {
-  opacity:0;
+#cf2 img.transparent {
+opacity:0;
+}
+#cf_onclick {
+cursor:pointer;
 }
 .column {
   float: left;
@@ -296,10 +300,12 @@ It is necessary for the Engineers of the Electronics, Electrical, Mechatronics a
 <br>
 <p></p><br>
 <center><button class="button" onclick="myArticles()">For more Articles</button></center><br>
-<div id="cf">
-  <img class ="cf" src="chatterbotapp.PNG" />
-  <img class ="cf" src="mathyourwayapp.PNG" />
+
+<div id="cf2" class="shadow">
+  <img  src="chatterbotapp.PNG" />
+  <img  src="mathyourwayapp.PNG" />
 </div>
+<p id="cf_onclick">Click me to toggle</p>
 <hr>
 <p></p>
 <ul class="nav">
