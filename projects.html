@@ -4,6 +4,7 @@
   <title>Programing Portfolio</title>
   <meta http-equiv="refresh" content="10" >
   <link rel="shortcut icon" href="disk_jockey.ico" />
+ </head>
 
   <style>
 * {box-sizing: border-box}
@@ -66,108 +67,35 @@
      padding: 100px 20px;
      height: 100%;
    }
+@media screen and (max-height: 450px) {
 
-   #Home {background-color: #3A9FEF;}
-   #Projects {background-color: #3A9FEF;}
-   #About {background-color: #3A9FEF;}
-   #Contact {background-color: #3A9FEF;}
+  .topside{padding-top: 15px;}
+}
+.topside
+{
+  padding-top: 30px;
+  right: 70px;
+  position: absolute;
+  top: 30px;
+}
+.topside a {
+  font-size: 25px;
+  color: #3A9FEF;
+}
+.topside a:hover {
+  color: #000000;
+}
+
+
    </style>
- </head>
  <body>
-
- <button class="tablink" onclick="openPage1('Home', this, 'red')" id="defaultOpen">Home</button>
- <button class="tablink" onclick="openPage2('News', this, 'green')" >Projects</button>
- <button class="tablink" onclick="openPage3('Contact', this, 'blue')">Contact</button>
- <button class="tablink" onclick="openPage4('About', this, 'orange')">About</button>
-
-
- <script>
- function openPage1(pageName,elmnt,color) {
-   var i, tabcontent, tablinks;
-   window.open("index.html","_self");
-   tabcontent = document.getElementsByClassName("tabcontent");
-   for (i = 0; i < tabcontent.length; i++) {
-     tabcontent[i].style.display = "none";
-   }
-   tablinks = document.getElementsByClassName("tablink");
-   for (i = 0; i < tablinks.length; i++) {
-     tablinks[i].style.backgroundColor = "";
-   }
-   document.getElementById(pageName).style.display = "block";
-   elmnt.style.backgroundColor = color;
- }
- function openPage2(pageName,elmnt,color) {
-   var i, tabcontent, tablinks;
-   window.open("projects.html","_self");
-   tabcontent = document.getElementsByClassName("tabcontent");
-   for (i = 0; i < tabcontent.length; i++) {
-     tabcontent[i].style.display = "none";
-   }
-   tablinks = document.getElementsByClassName("tablink");
-   for (i = 0; i < tablinks.length; i++) {
-     tablinks[i].style.backgroundColor = "";
-   }
-   document.getElementById(pageName).style.display = "block";
-   elmnt.style.backgroundColor = color;
- }
- function openPage3(pageName,elmnt,color) {
-   var i, tabcontent, tablinks;
-   window.open("contact.html","_self");
-   tabcontent = document.getElementsByClassName("tabcontent");
-   for (i = 0; i < tabcontent.length; i++) {
-     tabcontent[i].style.display = "none";
-   }
-   tablinks = document.getElementsByClassName("tablink");
-   for (i = 0; i < tablinks.length; i++) {
-     tablinks[i].style.backgroundColor = "";
-   }
-   document.getElementById(pageName).style.display = "block";
-   elmnt.style.backgroundColor = color;
- }
- function openPage4(pageName,elmnt,color) {
-   var i, tabcontent, tablinks;
-   window.open("about.html","_self");
-   tabcontent = document.getElementsByClassName("tabcontent");
-   for (i = 0; i < tabcontent.length; i++) {
-     tabcontent[i].style.display = "none";
-   }
-   tablinks = document.getElementsByClassName("tablink");
-   for (i = 0; i < tablinks.length; i++) {
-     tablinks[i].style.backgroundColor = "";
-   }
-   document.getElementById(pageName).style.display = "block";
-   elmnt.style.backgroundColor = color;
- }
- function mychatbot() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.chatterbot");
- }
- function mymathyourway() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.mathyourway");
- }
- function myExpense() {
-   window.open("https://github.com/smv1999/Xpense");
- }
- function mychatpy() {
-   window.open("https://github.com/smv1999/ScriptedChatbot");
- }
- function mychatcpp() {
-   window.open("https://github.com/smv1999/Cbot");
- }
- function mydiseasePred() {
-   window.open("https://github.com/smv1999/dpredictor");
- }
- function myaimtodo() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.aimtodo");
- }
- function mytechnofreak() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.technofreak");
- }
-
-
- </script>
-<br>
-<p></p>
-<br>
+<div class="topside">
+  <a href="index.html">Home</a>&nbsp; &nbsp;
+  <a href="about.html">About</a>&nbsp; &nbsp;
+  <a href="projects.html">Projects</a>&nbsp; &nbsp;
+  <a href="https://github.com/smv1999">Github</a>&nbsp; &nbsp;
+</div>
+<br><br>
 <center><b><font size="5" color="black">My Projects</font></b></center><br>
 <br>
 
@@ -223,4 +151,33 @@
 
 <hr>
   <div class="footer"><font size="2">©2019 by S M Vaidhyanathan All Rights Reserved</font></div>
+  <script>
+ 
+ function mychatbot() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.chatterbot");
+ }
+ function mymathyourway() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.mathyourway");
+ }
+ function myExpense() {
+   window.open("https://github.com/smv1999/Xpense");
+ }
+ function mychatpy() {
+   window.open("https://github.com/smv1999/ScriptedChatbot");
+ }
+ function mychatcpp() {
+   window.open("https://github.com/smv1999/Cbot");
+ }
+ function mydiseasePred() {
+   window.open("https://github.com/smv1999/dpredictor");
+ }
+ function myaimtodo() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.aimtodo");
+ }
+ function mytechnofreak() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.technofreak");
+ }
+
+
+ </script>
     </html>

@@ -90,6 +90,24 @@ body, html {
 .tablink:hover {
   background-color: #3A9FEF;
 }
+@media screen and (max-height: 450px) {
+
+  .topside{padding-top: 15px;}
+}
+.topside
+{
+  padding-top: 30px;
+  right: 70px;
+  position: fixed;
+  top: 30px;
+}
+.topside a {
+  font-size: 25px;
+  color: #3A9FEF;
+}
+.topside a:hover {
+  color: #000000;
+}
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -99,86 +117,17 @@ body, html {
   height: 100%;
 }
 
-#Home {background-color: #3A9FEF;}
-#Projects {background-color: #3A9FEF;}
-#About {background-color: #3A9FEF;}
-#Contact {background-color: #3A9FEF;}
+
 
 </style>
 </head>
 <body>
-
-<button class="tablink" onclick="openPage1('Home', this, 'red')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage2('News', this, 'green')" >Projects</button>
-<button class="tablink" onclick="openPage3('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage4('About', this, 'orange')">About</button>
-
-
-<script>
-function openPage1(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("index.html","_self");
-
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage2(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("projects.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage3(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("contact.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage4(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("about.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-
-</script>
-<p></p>
-<br>
-<br>
-<p></p>
+<div class="topside">
+  <a href="index.html">Home</a>&nbsp; &nbsp;
+  <a href="about.html">About</a>&nbsp; &nbsp;
+  <a href="projects.html">Projects</a>&nbsp; &nbsp;
+  <a href="https://github.com/smv1999">Github</a>&nbsp; &nbsp;
+</div>
 <b class="button"><font size="5">Contact Us</font></b>
 <br>
 <p></p>
@@ -197,4 +146,10 @@ function openPage4(pageName,elmnt,color) {
 <hr>
 <div class="footer"><font size="2">©2019 by S M Vaidhyanathan All Rights Reserved</font></div>
 </body>
+
+<script>
+
+
+
+</script>
   </html>

@@ -91,86 +91,45 @@ color: white;
   padding: 100px 20px;
   height: 100%;
 }
+@media screen and (max-height: 450px) {
 
-#Home {background-color: #3A9FEF;}
-#Learn {background-color: #3A9FEF;}
-#About {background-color: #3A9FEF;}
-#Contact {background-color: #3A9FEF;}
+  .topside{padding-top: 15px;}
+}
+.topside
+{
+  padding-top: 30px;
+  right: 70px;
+  position: fixed;
+  top: 30px;
+}
+.topside a {
+  font-size: 25px;
+  color: #3A9FEF;
+}
+.topside a:hover {
+  color: #000000;
+}
+
+.leftstyle{
+  left: 160px;
+  top: 30px;
+  position: relative;
+}
 </style>
 </head>
 <body>
-
-<button class="tablink" onclick="openPage1('Home', this, 'red')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage2('News', this, 'green')" >Projects</button>
-<button class="tablink" onclick="openPage3('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage4('About', this, 'orange')">About</button>
-
-<script>
-function openPage1(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("index.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage2(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("projects.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage3(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("contact.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage4(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("about.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-
-</script>
-<p></p>
+  <div class="topside">
+  <a href="index.html">Home</a>&nbsp; &nbsp;
+  <a href="about.html">About</a>&nbsp; &nbsp;
+  <a href="projects.html">Projects</a>&nbsp; &nbsp;
+  <a href="https://github.com/smv1999">Github</a>&nbsp; &nbsp;
+</div>
 <br>
-<br>
-<p></p>
-<b class="button"><font size="5">About</font></b>
-<center><img class="center-fit" src="aboutimage.PNG" alt="Contact Us" height="350"><br></center>
+<b class="leftstyle"><font size="6">About</font></b><br><br><br>
+<center><p>Hi! I am S M Vaidhyanathan and welcome to my Programming Portfolio.I am currently pursuing my
+BE in Computer Science. I work in the field of Application Development. I am very interested in reading 
+articles about current technology affairs.I also like to contribute articles on Linkedin.I have good Programming skills and good at Debugging.I have special interest in the field of Artificial Intelligence, Data Science and Machine Learning.</p></center>
+If you’d like to connect, feel free to email or stalk me elsewhere on the web
 <center><p>Follow me on:</p></center><br>
 <center><a class="button" href="https://twitter.com/VaidhyanathanS3" style="color:blue">Follow me on twitter</a>
 <a class="button" href="https://www.linkedin.com/in/s-m-vaidhyanathan-241457171/" style="color:blue">Follow me on linkedin</a>
@@ -179,4 +138,9 @@ function openPage4(pageName,elmnt,color) {
 <hr>
 <div class="footer"><font size="2">©2019 by S M Vaidhyanathan All Rights Reserved</font></div>
 </body>
+
+<script>
+
+
+</script>
   </html>

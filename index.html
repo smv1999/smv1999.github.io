@@ -5,6 +5,7 @@
   <link rel="shortcut icon" href="disk_jockey.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+</head>
   <style>
 * {box-sizing: border-box}
 
@@ -147,7 +148,24 @@ body, html {
   font-size: 17px;
   width: 25%;
 }
+@media screen and (max-height: 450px) {
 
+  .topside{padding-top: 15px;}
+}
+.topside
+{
+  padding-top: 30px;
+  right: 70px;
+  position: fixed;
+  top: 30px;
+}
+.topside a {
+  font-size: 25px;
+  color: #3A9FEF;
+}
+.topside a:hover {
+  color: #000000;
+}
 
 .tablink:hover {
   background-color: #3A9FEF;
@@ -160,149 +178,28 @@ body, html {
   padding: 100px 20px;
   height: 100%;
 }
-
-#Home {background-color: #3A9FEF;}
-#Projects {background-color: #3A9FEF;}
-#About {background-color: #3A9FEF;}
-#Contact {background-color: #3A9FEF;}
+.centerstyle{
+  top: 60px;
+}
+.leftstyle{
+  left: 160px;
+  top: 30px;
+  position: relative;
+}
 </style>
-</head>
 <body>
-
-<div class="center-fit">
-<button class="tablink" onclick="openPage1('Home', this, 'blue')" id="defaultOpen1">Home</button>
-<!-- red -->
-<button class="tablink" onclick="openPage2('News', this, 'blue')" id="defaultOpen2">Projects</button>
-<!-- green -->
-<button class="tablink" onclick="openPage3('Contact', this, 'blue')" id="defaultOpen3">Contact</button>
-<!-- blue -->
-<button class="tablink" onclick="openPage4('About', this, 'blue')" id="defaultOpen4">About</button>
-<!-- orange -->
+<div class="topside">
+  <a href="about.html">About</a>&nbsp; &nbsp;
+  <a href="projects.html">Projects</a>&nbsp; &nbsp;
+  <a href="https://github.com/smv1999">Github</a>&nbsp; &nbsp;
 </div>
-
-
-<script>
-function openPage1(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.location.reload();
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage2(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("projects.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage3(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("contact.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function openPage4(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  window.open("about.html","_self");
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-function myFunction() {
-  window.open("https://www.youtube.com/channel/UCFC7riVkngEprd0YaUTSrJw");
-}
-
-
-
-</script>
-
-</body>
-
-</head>
-<!--
-<ul class="navdiv">
-<li><b><font size="5" color="black">Welcome to my Portfolio</font></b></li><br>
-</ul>
-<hr> -->
-
 <br>
-<p></p>
-  <img class="center-fit" src="background.jpg" alt="Background" height="520">
-
-
-
-
-
+<b class="leftstyle"><font size="6">S M Vaidhyanathan</font></b>
+<center><img src="profile_photo.jpg" height="460" width="340" class="centerstyle"></center>
 <br>
-<p></p>
-<center><b class="indentleftonly"><font size="5" color="black">Computer Science And Growing Technology</font></b></center><br>
-<br>
-<div class="indent">It is of no doubt that the field of Computer Science is reaching newer heights day by day by overcoming many real life challenges. Our society has seen so much technological advances in this field since the mid-20th century. It is an undeniable fact that we can’t even imagine our life without computers! Computers were invented for using them initially to perform complex computations. The field of Computer Science has been immensely revolutionized and now-a-days we have sophisticated and technologically advanced computers which can perform more efficiently than their previous generations.</div>
+<center><p>Hi! I am S M Vaidhyanathan and welcome to my Programming Portfolio.I am currently pursuing my
+BE in Computer Science.</p></center>
 
-<p></p><br>
-
-
-<div class="indent">Also it is evident from the recent research ideas of the “Quantum Computer” that the technological advancements that are taking place is a never ending process. Every day Computer scientists explore with new ideas. Innovative thinking is very important in the field of computer science.
-
-
-
-Computers are in general considered to be dumb machines. Also generally people think that computers can’t take their own decisions; that was considered to be a major disadvantage of the computer. But computer scientists and data analysts are confident and are researching to overcome this drawback! Moreover we have been able to see that these things are being made possible by Machine Learning and Artificial Intelligence. Google’s Duplex is one of the mind blowing examples of Artificial Intelligence in which AI is used for booking tickets, reservation in Restaurants and booking appointment in hair salons. It is an extension of the Google Assistant that allows it to carry out natural conversations by mimicking human voice.</div>
-
-<p></p><br>
-
-
-<div class="indent">We can’t predict about the future generation computer systems. Also the branches of Computer Science like Data Mining and Cloud Computing have transformed the way of data storage. It provides data services and software and hardware are delivered as services over the Internet. We are familiar that Microcomputers include Laptop, Smartphones, Tablets and Desktops. The advancements in the field of Mobile computing and Mobile Application Development is simply outstanding! The computing capabilities of smartphones is extensively high when compared to basic cellular phones. Top companies like Apple, Windows, Oneplus, Xiaomi, Nokia and other Indian brands like Xolo, Lava provide Smart phone manufacturing services. Smart phones have other commendable features apart from their computational capabilities like Complete security, Video streaming, Gaming, Biometric security like Face Recognition, fingerprint scanning etcetera.
-
-
-
-It is necessary for the Engineers of the Electronics, Electrical, Mechatronics and Computer science to work together to accomplish some of the technological and innovative challenges. Recent researches are going on in the field of Data mining, Machine Learning, Artificial Intelligence and Quantum computing. Undoubtedly Quantum computing is going to massively revolutionize the way of the current computing. Also the areas such as Virtual Reality and Augmented Reality are going to change the Graphics domain characteristics and other camera characteristics of a smartphone. One day Teleporting would be made possible and every one would be Awestruck! We can definitely expect computers to play a major role in the invention of a Time Machine! (If it is invented in future!) All the branches of Science must work together to make some of the tasks considered impossible currently, possible in future.</div>
-
-
-<p></p><br>
-
-<div class="indent rules">Finally I would like to conclude that no one can stop the process of evolution of technology and advancements that are taking place at a faster pace every day. We can say that fruitful products of Science are unpredictable and unimaginable and there is nothing impossible!</div>
-<br>
-<p></p><br>
-<center><a class="button" href="https://www.linkedin.com/in/s-m-vaidhyanathan-241457171/detail/recent-activity/posts/" target = "_self" style="color:blue">For More Articles</a></center><br>
-
-
-<hr>
-<p></p>
-<ul class="nav">
-<li><a class="indentleftonly" href="https://sites.google.com/view/programmersgateway" target = "_self" style="color:blue">Visit This Website</a></li><br><br>
-</ul>
-
-<hr>
 <center><p>Follow me on:</p></center><br>
 <center><a href="https://twitter.com/VaidhyanathanS3" class="fa fa-twitter"></a>
 <a href="https://www.linkedin.com/in/s-m-vaidhyanathan-241457171/" class="fa fa-linkedin"></a>
@@ -314,4 +211,15 @@ It is necessary for the Engineers of the Electronics, Electrical, Mechatronics a
 <br>
 <footer class="footer"><font size="2">©2019 S M Vaidhyanathan All Rights Reserved</font></footer>
 </body>
+<script>
+function myFunction() {
+  window.open("https://www.youtube.com/channel/UCFC7riVkngEprd0YaUTSrJw");
+}
+
+
+
+</script>
+
+
+
 </html>
