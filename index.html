@@ -1,224 +1,177 @@
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Programming Portfolio</title>
   <link rel="shortcut icon" href="disk_jockey.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
   <style>
 * {box-sizing: border-box}
-
-.indent {
-  padding-left:2em;
-  padding-right:2em;
-}
-
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.indentleftonly {
-  padding-left:2em;
-}
-.nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
-}
-
-div {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.nav {
-  background-color: #3A9FEF;
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-.navdiv {
-  margin: 0;
-  list-style-type: none;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-  padding: 0;
-}
-
-.footer{
-       /* position: fixed; */
-       text-align: center;
-       bottom: 0px;
-       width: 100%;
-   }
-   /* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.top {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-   .center-fit {
-            width: 100%;
-        }
-
-  .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.button {
-  background-color: #3A9FEF; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-/* Set height of body and the document to 100% */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Style tab links */
-.tablink {
-  background-color: #FFFFFF;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-@media screen and (max-height: 450px) {
-
-  .topside{padding-top: 15px;}
-}
-.topside
-{
-  padding-top: 30px;
-  right: 70px;
-  position: fixed;
-  top: 30px;
-}
-.topside a {
-  font-size: 25px;
-  color: #3A9FEF;
-}
-.topside a:hover {
-  color: #000000;
-}
-
-.tablink:hover {
-  background-color: #3A9FEF;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: #3A9FEF;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
-.centerstyle{
-  top: 60px;
-}
-.leftstyle{
-  left: 160px;
-  top: 30px;
-  position: relative;
-}
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
 </style>
-<body>
-<div class="topside">
-  <a href="about.html">About</a>&nbsp; &nbsp;
-  <a href="projects.html">Projects</a>&nbsp; &nbsp;
-  <a href="https://github.com/smv1999">Github</a>&nbsp; &nbsp;  
-  <a href="quotes.html">Quotes</a>&nbsp; &nbsp;
-
-</div>
-<br>
-<b class="leftstyle"><font size="6" style="text-shadow: 2px 2px 5px blue;">S M Vaidhyanathan</font></b>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+          <a class="navbar-brand" href="index.html">Personal Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <br>
+    <br>
 <center><img src="profile_photo.jpg" height="460" width="340" class="centerstyle"></center>
 <br>
-<center><p>Hi! I am S M Vaidhyanathan and welcome to my Programming Portfolio.I am currently pursuing my
-BE in Computer Science.</p></center>
-
-<center><p>Follow me on:</p></center><br>
-<center><a href="https://twitter.com/VaidhyanathanS3" class="fa fa-twitter"></a>
-<a href="https://www.linkedin.com/in/s-m-vaidhyanathan-241457171/" class="fa fa-linkedin"></a>
-<a href="https://www.youtube.com/channel/UCFC7riVkngEprd0YaUTSrJw?view_as=subscriber" class="fa fa-youtube"></a>
-<a href="https://github.com/smv1999" style="color:blue">Follow me on GitHub</a></center><br>
-
-
-<hr>
 <br>
-<footer class="footer"><font size="2">©2019 S M Vaidhyanathan All Rights Reserved</font></footer>
+<br>
+<br>
+<center>
+  <div id="about">
+    <h2>ABOUT</h2>
+  <p>Hi! I am S M Vaidhyanathan and welcome to my Programming Portfolio.I am currently pursuing my
+BE in Computer Science.</p>
+</div>
+<br><br><br><br><br><br>
+<div id="projects">
+<center>
+   <h2>PROJECTS</h2>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+          <h4>ChatterBot - Personal Digital Assistant</h4>
+          <span class="logo-small"><img src="chatterbotimage.png" width="160" height="140"></span><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="mychatbot()">Go to Project</button>
+    
+        </div>
+        <div class="col-sm-4">
+            <h4>Math Your Way - Fall In Love With Math</h4>
+          <span class="logo-small"><img src="mathyourwayimage.png" width="160" height="140"></span><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="mymathyourway()">Go to Project</button>
+    
+        </div>
+        <div class="col-sm-4">
+            <h4>Aim To Do - Lists and Planner</h4>
+          <span class="logo-small"><img src="aimtodo.png" width="160" height="140"></span><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="myaimtodo()">Go to Project</button>
+        </div>
+      </div>
+</center>
+
+<center>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+          <h4>Technofreak - Only for Technophiles</h4>
+          <span class="logo-small"><img src="technofreak.png" width="160" height="140"></span><br><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="mytechnofreak()">Go to Project</button>
+    
+        </div>
+        <div class="col-sm-4">
+            <h4>Home Expenses Management System</h4>
+          <span class="logo-small"><img src="expensesimage.jpg" width="160" height="140"></span><br><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="myExpense()">Go to Project</button>
+    
+        </div>
+        <div class="col-sm-4">
+            <h4>Chatbot in Python</h4>
+          <span class="logo-small"><img src="chatbotpyimage.jpg" width="160" height="140"></span><br><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="mychatpy()">Go to Project</button>
+        </div>
+      </div>
+</center>
+
+
+<center>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+          <h4>Chatbot in C++</h4>
+          <span class="logo-small"><img src="chatbotpyimage.jpg" width="160" height="140"></span><br><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="mychatcpp()">Go to Project</button>
+    
+        </div>
+        <div class="col-sm-4">
+            <h4>Disease Predictor based on Symptoms</h4>
+          <span class="logo-small"><img src="diseasepredimage.jpg" width="160" height="140"></span><br><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="mydiseasePred()">Go to Project</button>
+    
+        </div>
+        <div class="col-sm-4">
+            <h4>Space Fighter 2019</h4>
+          <span class="logo-small"><img src="player.png" width="160" height="140"></span><br><br>
+          <button class="btn btn-default  btn-lg btn-info" onclick="myspace()">Go to Project</button>
+        </div>
+      </div>
+</center>
+
+</div>
+</center>
+<br><br><br><br>
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="lefts">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Chennai, India</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +91 9600064291</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> vaidhyanathan.sm@gmail.com</p>
+      </div>
+      </div>
+      </div>
+      <br><br>
+    <footer class="container-fluid text-center">
+      <p>&copy; 2019 Programmers Gateway All Rights Reserved</p>
+    </footer>
 </body>
 <script>
 function myFunction() {
   window.open("https://www.youtube.com/channel/UCFC7riVkngEprd0YaUTSrJw");
 }
-
-
+function mychatbot() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.chatterbot");
+ }
+ function mymathyourway() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.mathyourway");
+ }
+ function myExpense() {
+   window.open("https://github.com/smv1999/Xpense");
+ }
+ function mychatpy() {
+   window.open("https://github.com/smv1999/ScriptedChatbot");
+ }
+ function mychatcpp() {
+   window.open("https://github.com/smv1999/Cbot");
+ }
+ function mydiseasePred() {
+   window.open("https://github.com/smv1999/dpredictor");
+ }
+ function myaimtodo() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.aimtodo");
+ }
+ function mytechnofreak() {
+   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.technofreak");
+ }
+function myspace()
+{
+  window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.spacefighter");
+}
 
 </script>
 
