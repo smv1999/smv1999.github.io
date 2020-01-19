@@ -1,191 +1,756 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Programming Portfolio</title>
-  <link rel="shortcut icon" href="disk_jockey.ico" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-  <style>
-* {box-sizing: border-box}
-footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-</style>
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
-          <a class="navbar-brand" href="index.html">Personal Portfolio</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#articles">ARTICLES</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
-      </div>
-    </nav>
-    <br>
-    <br>
-<center><img src="profile_photo.jpg" height="460" width="340" class="centerstyle"></center>
-<br>
-<br>
-<br>
-<br>
-<center>
-  <div id="about">
-    <h2>ABOUT</h2>
-  <p>Hi! I am S M Vaidhyanathan and welcome to my Programming Portfolio.I am currently pursuing my
-BE in Computer Science.</p>
-</div>
-<br><br><br><br><br><br>
-<div id="projects">
-<center>
-   <h2>PROJECTS</h2>
-    <div class="row slideanim">
-        <div class="col-sm-4">
-          <h4>ChatterBot - Personal Digital Assistant</h4>
-          <span class="logo-small"><img src="chatterbotimage.png" width="160" height="140"></span><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="mychatbot()">Go to Project</button>
-    
-        </div>
-        <div class="col-sm-4">
-            <h4>Math Your Way - Fall In Love With Math</h4>
-          <span class="logo-small"><img src="mathyourwayimage.png" width="160" height="140"></span><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="mymathyourway()">Go to Project</button>
-    
-        </div>
-        <div class="col-sm-4">
-            <h4>Aim To Do - Lists and Planner</h4>
-          <span class="logo-small"><img src="aimtodo.png" width="160" height="140"></span><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="myaimtodo()">Go to Project</button>
-        </div>
-      </div>
-</center>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Personal Programming Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-<center>
-    <div class="row slideanim">
-        <div class="col-sm-4">
-          <h4>Technofreak - Only for Technophiles</h4>
-          <span class="logo-small"><img src="technofreak.png" width="160" height="140"></span><br><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="mytechnofreak()">Go to Project</button>
-    
-        </div>
-        <div class="col-sm-4">
-            <h4>Home Expenses Management System</h4>
-          <span class="logo-small"><img src="expensesimage.jpg" width="160" height="140"></span><br><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="myExpense()">Go to Project</button>
-    
-        </div>
-        <div class="col-sm-4">
-            <h4>Chatbot in Python</h4>
-          <span class="logo-small"><img src="chatbotpyimage.jpg" width="160" height="140"></span><br><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="mychatpy()">Go to Project</button>
-        </div>
-      </div>
-</center>
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-<center>
-    <div class="row slideanim">
-        <div class="col-sm-4">
-          <h4>Chatbot in C++</h4>
-          <span class="logo-small"><img src="chatbotpyimage.jpg" width="160" height="140"></span><br><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="mychatcpp()">Go to Project</button>
-    
-        </div>
-        <div class="col-sm-4">
-            <h4>Disease Predictor based on Symptoms</h4>
-          <span class="logo-small"><img src="diseasepredimage.jpg" width="160" height="140"></span><br><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="mydiseasePred()">Go to Project</button>
-    
-        </div>
-        <div class="col-sm-4">
-            <h4>Space Fighter 2019</h4>
-          <span class="logo-small"><img src="player.png" width="160" height="140"></span><br><br>
-          <button class="btn btn-default  btn-lg btn-info" onclick="myspace()">Go to Project</button>
-        </div>
-      </div>
-</center>
-<br><br><br>
-<div id="articles">
-  <center><h2>ARTICLES</h2>
-  <button class="btn btn-default  btn-lg btn-info" onclick="myarticles()">View Articles</button>
-</center>
-</div>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-</div>
-</center>
-<br><br><br><br>
-<div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-      <div class="lefts">
-        <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Chennai, India</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +91 9600064291</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> vaidhyanathan.sm@gmail.com</p>
-      </div>
-      </div>
-      </div>
-      <br><br>
-    <footer class="container-fluid text-center">
-      <p>&copy; 2019 S M Vaidhyanathan All Rights Reserved</p>
-    </footer>
-</body>
-<script>
-function myFunction() {
-  window.open("https://www.youtube.com/channel/UCFC7riVkngEprd0YaUTSrJw");
-}
-function mychatbot() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.chatterbot");
- }
- function mymathyourway() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.mathyourway");
- }
- function myExpense() {
-   window.open("https://github.com/smv1999/Xpense");
- }
- function mychatpy() {
-   window.open("https://github.com/smv1999/ScriptedChatbot");
- }
- function mychatcpp() {
-   window.open("https://github.com/smv1999/Cbot");
- }
- function mydiseasePred() {
-   window.open("https://github.com/smv1999/dpredictor");
- }
- function myarticles()
- {
-   window.open("https://www.linkedin.com/in/s-m-vaidhyanathan-241457171/detail/recent-activity/posts/");
- }
- function myaimtodo() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.aimtodo");
- }
- function mytechnofreak() {
-   window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.techfreak");
- }
-function myspace()
-{
-  window.open("https://play.google.com/store/apps/details?id=com.programmersgateway.sm1999.spacefighter");
-}
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-</script>
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/smv.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">S M Vaidhyanathan</a></h1>
+				<span class="position"><a href="https://play.google.com/store/apps/developer?id=Programmers+Gateway">Android Developer</a> in India</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="services">Services</a></li>
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<li><a href="#" data-nav-section="work">Work</a></li>
+						<li><a href="#" data-nav-section="blog">Blog</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/myimage.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi! <br>I'm Vaidhyanathan</h1>
+						   	
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/smv1999.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>an Android Developer </h1>
+												
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Us</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm S M Vaidhyanathan. </strong>I am a Computer Science Engineering Student at Rajalakshmi Engineering College. I am very interested in the field of Application development. I am a very curious person who always looks forward to learning more and more. I am very interested in reading articles about current technology affairs. I have the ability to convert any idea into a working product.</p>
+										<p>Respectful self-motivator gifted at finding reliable solutions for software issues. Experienced in Web Development and Android Development and offering skills in C/C++, Python, and Java. Fluent in English, Hindi, and Tamil and accustomed to working with cross-cultural, global teams.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Web Design</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Software</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Application</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>I am happy to say that I have done 15+ projects and <br>some internships successfully!</h2>
+										<a href="#" class="btn-hire">Hire me</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
+			
+			<section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I do?</span>
+							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="icon-bulb"></i>
+								</span>
+								<div class="desc">
+									<h3>Innovative Ideas</h3>
+									<p>Sometimes I get flooded with ideas can convert any idea into a product.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Software</h3>
+									<p>I am good at understanding software and can develop software applications.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Application</h3>
+									<p>I am good at developing user-friendly and quality android applications.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-globe"></i>
+								</span>
+								<div class="desc">
+									<h3>Social Media</h3>
+									<p>I am very much active on social media and use it in a positive way.</p>
+								</div>
+							</div>
+						</div>	
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-blogger"></i>
+								</span>
+								<div class="desc">
+									<h3>Blogging</h3>
+									<p>Blogging is something that I love so much and I have a page for that!</p>
+								</div>
+							</div>
+						</div>	
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-pen"></i>
+								</span>
+								<div class="desc">
+									<h3>Creative Writing</h3>
+									<p>I consider this to be one of my strongest skills and I love Writing!</p>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</section>
+			
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of coffee</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="15" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Internships</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>I am highly skilled in Python, C/C++ and Java. I am also experienced and skilled in Android Application Development.
+								I am also good at Web Development and basics of Data Structures and Algorithms. My Other skills include Debugging, Problem Solving and Logical Approach. I have 
+								good listening skills. I also have special interest in the field of Artificial Intelligence and 
+								Machine Learning.
+							</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Python</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>C</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>C++</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Java</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+								    <span>95%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Android Development</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SQL</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Web Development</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span>85%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Science
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+												<p>I am pursuing my <strong>BE in Computer Science </strong>from Rajalakshmi Engineering College. I am 
+												maintaining a good CGPA throughout the semesters.</p>
+									        </div>
+									    </div>
+									</div>
+									
+								
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFive">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									        <div class="panel-body">
+									            <p>I did my 12th grade in Kendriya Vidyalaya, Ashok Nagar, Chennai with specialization in<strong> Computer Science. </strong>I got 95.2% and was the school's fourth topper.</p>	
+									        </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFour">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">SSLC - 10th Grade
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									        <div class="panel-body">
+									            <p>I did my 10th grade in Kendriya Vidyalaya, Andrews Ganj, New Delhi. I got a CGPA of<strong> 9.6.</strong></p>	
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-code"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Software Developer at Toshiba Machine (Chennai) Pvt Ltd.</a> <span>Jun 2019- Jul 2019</span></h2>
+					                  <p>I Worked in the creation of user interface (HMI) for their manufacturing sector to monitor working of their machines.</p>
+					               </div>
+					            </div>
+					         </article>
+
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-code"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#"></a>Content Writer at Pojo Software Pvt Ltd.<span>2017-2018</span></h2>
+					                  <p>I did a month-long internship in this company which is an IIT-M incubated company. I was given the job of content preparation
+										  for the students learning website that they were creating especially for NEET coaching and 12th grade students.
+									  </p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-code"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Android Application Development and Sentimental Analysis.</a> <span>2017-2018</span></h2>
+					                  <p>I worked in the company - Magellanix Technology Solutions Private Ltd for a short period of time. The duration was from 10 December 2018 to 17 December 2018.<br>
+										Tools Used: Python,Android Development (Android Studio).<br>Learnt some techniques in Android Development. I Worked in the field 
+										of Sentimental Analysis for their company’s confidential project.</p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+			<section class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p class="work-menu"><span><a href="#" class="active">Android Apps</a></span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 02</a></h3>
+										<span>Animation</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/img-3.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 03</a></h3>
+										<span>Illustration</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url(images/img-4.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 04</a></h3>
+										<span>Application</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-5.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 05</a></h3>
+										<span>Graphic, Logo</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-6.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 06</a></h3>
+										<span>Web Design</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-blog" data-section="blog">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Blog</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Renovating National Gallery</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="#">info@domain.com</a></p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>198 West 21th Street, Suite 721 New York NY 10016</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel://">+123 456 7890</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+									<form action="">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject">
+										</div>
+										<div class="form-group">
+											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+										</div>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
