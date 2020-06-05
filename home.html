@@ -147,11 +147,24 @@
     left: 0%;
   }
 }
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar.fixed-top {
+    background: #1f2235;
+    box-shadow: 0 18px 40px -30px #23263a;
+    animation: fadeInDown 1s ease-in-out 0s 1 normal none running;
+}
 
 </style>
-<body style="background-color: #13405B;">
+<!-- #13405B; -->
+<body style="background-color: #23263a;">
     
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="logo.png" alt="VSM" height="100" width="80">Vaidhyanathan S M</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -169,7 +182,7 @@
         </div>
         </div>
      </nav>
-      <br><br>
+      <br><br><br><br><br><br><br>
       <div id="about" class="container">
         <center><h2 class="fontcolor"><i>About Me</i></h2></center>
         <center><div class = "container-fluid carouse">
