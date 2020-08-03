@@ -10,14 +10,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <style>
-    .fontcolor{
-        color: rgb(233, 213, 213);
-    }
+   .fontcolor{
+     color: black;
+   }
     html{
         scroll-behavior: smooth;
     }
     .line{
-        background-color: #ffc04d;
+        background-color: black;
     }
     * {
   box-sizing: border-box;
@@ -35,7 +35,7 @@
   content: '';
   position: absolute;
   width: 6px;
-  background-color: rgb(233, 213, 213);
+  background-color: black;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -57,8 +57,8 @@
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: rgb(233, 213, 213);
-  border: 4px solid #FF9F55;
+  background-color: gray;
+  border: 4px solid #000000;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -83,9 +83,9 @@
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid rgb(233, 213, 213);
+  border: medium solid gray;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent gray;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -97,9 +97,9 @@
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid rgb(233, 213, 213);
+  border: medium solid gray;
   border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(233, 213, 213) transparent transparent;
+  border-color: transparent gray transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -110,8 +110,8 @@
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: rgb(233, 213, 213);
   position: relative;
+  background-color: gray;
   border-radius: 6px;
 }
 
@@ -132,9 +132,9 @@
 /* Make sure that all arrows are pointing leftwards */
   .containers::before {
     left: 60px;
-    border: medium solid rgb(233, 213, 213);
+    border: medium solid black;
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgb(233, 213, 213) transparent transparent;
+    border-color: transparent black transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
@@ -161,23 +161,22 @@
 }
 
 </style>
-<!-- #13405B; -->
-<body style="background-color: #23263a;">
+<body>
     
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="VSM" height="100" width="80">Vaidhyanathan S M</a>
+        <a class="navbar-brand" href="index.html">Vaidhyanathan S M</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item"><button class="btn"><a class="nav-link" href="#about"><b class="fontcolor">About Me</b></a></button></li>
-            <li class="nav-item"><button class="btn"><a class="nav-link" href="#education"><b class="fontcolor">Education</b></a></button></li>
-            <li class="nav-item"><button class="btn"><a class="nav-link" href="#skills"><b class="fontcolor">Skills</b></a></button></li>
-            <li class="nav-item"><button class="btn"><a class="nav-link" href="#projects"><b class="fontcolor">Projects</b></a></button></li>
-            <li class="nav-item"><button class="btn"><a class="nav-link" href="Resume.pdf" download="Resume.pdf"><b class="fontcolor">Resume</b></a></button></li>
-            <li class="nav-item"><button class="btn"><a class="nav-link" href="#experience"><b class="fontcolor">Experience</b></a></button></li>
+            <li class="nav-item"><button class="btn"><a class="nav-link" href="#about"><b>About Me</b></a></button></li>
+            <li class="nav-item"><button class="btn"><a class="nav-link" href="#education"><b>Education</b></a></button></li>
+            <li class="nav-item"><button class="btn"><a class="nav-link" href="#skills"><b>Skills</b></a></button></li>
+            <li class="nav-item"><button class="btn"><a class="nav-link" href="#projects"><b>Projects</b></a></button></li>
+            <li class="nav-item"><button class="btn"><a class="nav-link" href="Resume.pdf" download="Resume.pdf"><b>Resume</b></a></button></li>
+            <li class="nav-item"><button class="btn"><a class="nav-link" href="#experience"><b>Experience</b></a></button></li>
           </ul>
         </div>
         </div>
@@ -226,11 +225,13 @@
           </div> </center>
           <hr class="line">
           <h4 class="fontcolor">
-            Student of Rajalakshmi Engineering College currently pursuing a Bachelor's Degree in Computer Science and Engineering.<br>
-            ✔Skilled in Python(Programming Language), Android Application Development, C/C++, Flask and Java .<br>
-            ✔Experienced Android Developer with 9 apps successfully published on to the Google Play Store.<br>
-            ✔Filled with the potential of converting ideas into working products.<br>
-            ✔Interested in the field of Artificial Intelligence and Data Science.<br>
+            Student of Rajalakshmi Engineering College currently pursuing a Bachelor's Degree in Computer Science and Engineering.
+            <ul>
+              <li>Skilled in Python(Programming Language), Android Application Development, C/C++, Flask and Java </li>
+              <li>Experienced Android Developer with 9 apps successfully published on to the Google Play Store</li>
+              <li>Filled with the potential of converting ideas into working products</li>
+              <li>Interested in the field of Artificial Intelligence and Data Science</li>
+            </ul>          
           </h4>
           <hr class="line">
           <br><br>
