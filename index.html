@@ -10,26 +10,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <style>
-    #particles-js canvas {
-        display: block;
-        vertical-align: bottom;
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        opacity: 0.2;
-        -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-        transition: opacity .8s ease, transform 1.4s ease
-    }
-
-    #particles-js {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        top: 0;
-        left: 0;
-        bottom: 0;
-    }
     .fontcolor{
         color: black;
     }
@@ -42,20 +22,7 @@
     }
 </style>
 <body>
-    <div id="particles-js"></div>
     <br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4 video-responsive">
-                <video controls autoplay class="video-responsive-item">
-                    <source src="Self Intro Video.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="col-sm-4"></div> 
-        </div>
-    </div>
-
     <div class="container">
         <br><br>
        <div class="row">
@@ -69,6 +36,8 @@
         </div>
         </div>
         <br><br>
+        <center><img class="rounded-circle" width="270" height="310" src="profile_photo.jpg" alt="VSM"></center>
+
     <center>
     <h3 id="first"></h3><br>
     </center>
@@ -104,8 +73,8 @@
     </div>
     <script>
         var i = 0,j = 0;
-        var txt = 'I am an Android Developer'; 
-        var txt2 = 'I am an Enthusiastic Programmer.'
+        var txt = 'I am a Native Android/Flutter Developer'; 
+        var txt2 = 'I am a Technical Blogger.'
         var speed = 50;
         $(document).ready(function(){
                 typeWriter();
